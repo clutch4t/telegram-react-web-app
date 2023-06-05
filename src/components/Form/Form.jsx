@@ -41,7 +41,7 @@ const Form = () => {
     }
 
     return (
-        <form className='form'>
+        <div className='form'>
             <h3>Fill out this form</h3>
             <input
                 className='input'
@@ -69,7 +69,7 @@ const Form = () => {
                 <option value={'person'}>A person</option>
                 <option value={'company'}>A company</option>
             </select>
-        </form>
+        </d>
     )
 }
 
