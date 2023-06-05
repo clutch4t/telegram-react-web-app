@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.css'
-import Button from '../button/Button'
+import Button from '../Button/Button'
 import { useTelegram } from '../../hooks/useTelegram';
 const tg = window.Telegram.WebApp;
 

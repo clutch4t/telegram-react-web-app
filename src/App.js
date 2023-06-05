@@ -1,10 +1,10 @@
 import './App.css';
 import { useEffect } from 'react';
-import Header from './components/header/Header';
+import Header from './components/Header/Header';
 import { useTelegram } from './hooks/useTelegram';
 import { Routes, Route } from 'react-router-dom'
-import ProductList from './components/productlist/ProductList'
-import Form from './components/form/Form'
+import ProductList from './components/ProductList/ProductList'
+import Form from './components/Form/Form'
 
 function App() {
 
