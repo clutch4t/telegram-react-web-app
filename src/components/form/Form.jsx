@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Form.css'
+import { useTelegram } from '../../hooks/useTelegram';
 
 const Form = () => {
 
@@ -7,6 +8,21 @@ const Form = () => {
     const [city, setCity] = useState('');
     const [street, setStreet] = useState('');
     const [type, setType] = useState('');
+    const { tg } = useTelegram();
+
+    useEffect(() => {
+        tg.MainButton.setParams({
+            text: "Send"
+        })
+    }, [])
+
+    useEffect(() => {
+        if (!city || !street) {
+            tg.MainButton.hide();
+        } else {
+            tg.MainButton.show();
+        }
+    }, [city, street])
 
     const onChangeName = (event) => {
         setName(event.target.value);
