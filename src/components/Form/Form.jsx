@@ -69,7 +69,7 @@ const Form = () => {
                 <option value={'person'}>A person</option>
                 <option value={'company'}>A company</option>
             </select>
-        </d>
+        </div>
     )
 }
 
